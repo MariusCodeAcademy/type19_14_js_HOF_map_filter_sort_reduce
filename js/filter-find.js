@@ -17,8 +17,12 @@ let filtered = numsArr.filter((num) => {
 filtered = numsArr.filter((num) => num < 0);
 console.log('filtered ===', filtered);
 
-const mixed = ['red', true, 5, 7, 'white', 10, NaN, null];
+const mixed = ['red', true, 5, 7, 'white', 10, 15, null];
 
 // atrinkti stringus
 const strArr = mixed.filter((el) => typeof el === 'string');
 console.log('strArr ===', strArr);
+
+// atrinkti tik skaicius i atskira masyva
+
+// atrinkti ne stringus ir neskaicius i viena masyva
