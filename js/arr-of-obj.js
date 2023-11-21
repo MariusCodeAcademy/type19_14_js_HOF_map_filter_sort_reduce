@@ -35,14 +35,20 @@ const mainArr = [
 ];
 console.table(mainArr);
 
-console.log('mainArr[0].town ===', mainArr[0].town);
+// console.log('mainArr[0].town ===', mainArr[0].town);
 
 let found = mainArr.find((cartObj) => cartObj.name === 'Bugs Bunny');
 // found = mainArr.find((cartObj) => cartObj.age > 33);
-console.log('found ===', found);
+// console.log('found ===', found);
 
 // isrikuoti mainArr pagal amziu
+mainArr.sort((aObj, bObj) => aObj.age - bObj.age);
+console.table(mainArr);
 
 // isrikuoti mainArr pagal varda
+mainArr.sort((aObj, bObj) => aObj.name.localeCompare(bObj.name));
+console.table(mainArr);
 
 // atrinkti tik vyrus arba moteris
+const menArr = mainArr.filter((userObj) => userObj.gender === 'Male');
+console.log('menArr ===', menArr);
