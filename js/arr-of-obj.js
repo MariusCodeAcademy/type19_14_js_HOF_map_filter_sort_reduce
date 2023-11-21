@@ -33,10 +33,16 @@ const mainArr = [
     town: 'Springfield',
   },
 ];
-console.log('mainArr ===', mainArr);
+console.table(mainArr);
 
 console.log('mainArr[0].town ===', mainArr[0].town);
 
 let found = mainArr.find((cartObj) => cartObj.name === 'Bugs Bunny');
 // found = mainArr.find((cartObj) => cartObj.age > 33);
 console.log('found ===', found);
+
+// isrikuoti mainArr pagal amziu
+
+// isrikuoti mainArr pagal varda
+
+// atrinkti tik vyrus arba moteris
