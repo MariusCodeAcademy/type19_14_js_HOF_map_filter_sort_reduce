@@ -23,3 +23,23 @@ console.log('grazinaMap ===', grazinaMap);
 console.log('spalvosUpper ===', spalvosUpper);
 
 // parasyti map funckija kuri naujame masyve isaugotu colors stringu ilgius
+const colLengthsArr = colors.map((spalva) => spalva.length);
+
+console.log('colLengthsArr ===', colLengthsArr);
+// gauti masyva kuriame butu li elementai su colors masyvo tekstu.
+
+const liColorsElsArr = colors.map((spalva) => {
+  // sukurti li el
+  const liEl = document.createElement('li');
+  // ideti i ji texta
+  liEl.textContent = spalva;
+  // ji grazinti
+  return liEl;
+});
+console.log('liColorsElsArr ===', liColorsElsArr);
+const listEl = document.getElementById('list');
+
+listEl.append(...liColorsElsArr);
+liColorsElsArr.forEach((liEl) => {
+  listEl.append(liEl);
+});
